@@ -10,12 +10,13 @@
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/body.css">
     <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/main-editor.css">
 
 </head>
 
 <body>
-    <header class="header">
-        <div class="container">
+    <header class="container">
+        <section class="header">
             <!-- Logo no cabeçalho -->
             <img src="./assets/img/Logo.svg" alt="Logo Alura Dev" class="header__logo">
 
@@ -34,8 +35,37 @@
                 <img src="./assets/img/Photo.png" alt="Foto de perfil no menu" class="header__menu-foto-img">
                 <p class="header__menu-foto-nome">Harry</p>
             </div>
-        </div>
+        </section>
     </header>
+
+    <main class="main container">
+        <section class="menu__left">
+            <div class="teste"></div>
+        </section>
+        
+        <section class="code-editor">
+
+            <div class="code-editor__bg">
+
+                <div class="circulo1 circulo"></div>
+                <div class="circulo2 circulo"></div>
+                <div class="circulo3 circulo"></div>
+
+                <textarea name="areatxt" id="areatxt" class="code-editor_txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero beatae aut ipsum temporibus accusantium. Corrupti quas neque fugiat distinctio ducimus necessitatibus et, libero quo, autem obcaecati nam quam commodi impedit.
+
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim, temporibus. Distinctio quaerat pariatur dicta accusamus exercitationem aliquid, facilis corporis voluptatum, ullam quasi fugit laborum repellendus eaque quidem nam in commodi!
+                </textarea>
+
+            </div>
+
+            <input type="button" value="Visualizar com o highlight" class="code-editor__btn">
+
+        </section>
+
+        <section class="menu__right">
+            <div class="teste"></div>
+        </section>
+    </main>
 
 </body>
 
