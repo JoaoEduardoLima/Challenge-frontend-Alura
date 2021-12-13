@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+.menu__left-div,
+.menu__rigth-div {
+  height: 500px;
+}
+
+@media screen and (min-width: 0) {
+  .menu__left-div {
+    display: none;
+  }
+
+  .menu__rigth-div {
+    margin-top: 2.5rem;
+    padding: 0 1rem;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .main {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .menu__left-div {
+    display: block;
+    margin-left: 0;
+    margin-top: 3.5rem;
+    width: 344px;
+  }
+  .menu__rigth-div {
+    margin-right: 0;
+    margin-top: 3.5rem;
+    width: 344px;
+  }
+}

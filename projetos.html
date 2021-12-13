@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./assets/css/main-editor.css">
     <link rel="stylesheet" href="./assets/css/main-menuRight.css">
     <link rel="stylesheet" href="./assets/css/main-menuLeft.css">
+    <link rel="stylesheet" href="./assets/css/main-projetos.css">
 
 </head>
 
@@ -69,59 +70,46 @@
             </div>
         </nav>
 
-        <section class="code-editor">
+        <section class="projeto">
+            <div class="projeto__div">
 
-            <div class="code-editor__bg">
+                <div class="code-editor__bg">
 
-                <!-- Desenho de cículo no editor, simulando uma IDE -->
-                <div class="circulo1 circulo"></div>
-                <div class="circulo2 circulo"></div>
-                <div class="circulo3 circulo"></div>
+                    <!-- Desenho de cículo no editor, simulando uma IDE -->
+                    <div class="circulo1 circulo"></div>
+                    <div class="circulo2 circulo"></div>
+                    <div class="circulo3 circulo"></div>
 
-                <!-- Área para digitar o código -->
-                <textarea name="areatxt" id="areatxt" class="code-editor_txt">const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj) const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res) const unfold = (f, seed) => { const go = (f, seed, acc) => { const res = f(seed) return res ? go(f, res[1], acc.concat([res[0]])) : acc } return go(f, seed, []) }
-                </textarea>
+                    <!-- Área para digitar o código -->
+                    <textarea name="areatxt" id="areatxt" class="code-editor_txt">const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj) const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res) const unfold = (f, seed) => { const go = (f, seed, acc) => { const res = f(seed) return res ? go(f, res[1], acc.concat([res[0]])) : acc } return go(f, seed, []) }
+                    </textarea>
 
-            </div>
-
-            <input type="button" value="Visualizar com o highlight" class="code-editor__btn">
-
-        </section>
-
-        <form class="menu__right">
-            <div class="menu__rigth-div">
-                <p class="menu__right-titulo">Seu projeto</p>
-
-                <!-- Entrada para o nome do projeto -->
-                <input type="text" name="menu-right-nome" id="menu-right-nome" placeholder="Nome do seu projeto"
-                    class="menu__right-nomeProjeto">
-
-                <!-- Entrada para a descrição do projeto -->
-                <input type="text" name="menu-right-descricao" id="menu-right-descricao"
-                    placeholder="Descrição do seu projeto" class="menu__right-descricao">
-
-                <p class="menu__right-titulo">Personalização</p>
-
-                <div class="personallizacao">
-
-                    <!-- Seletor de linguagem utilizda -->
-                    <select name="linguagem-projeto" id="linguagem-projeto" class="menu__right-select">
-
-                        <option value="HTML" class="value">HTML</option>
-                        <option value="CSS" class="value">CSS</option>
-                        <option value="JavaScript" class="value">JavaScript</option>
-
-                    </select>
-
-                    <!-- Color picker para selecionar a cor do fundo do editor -->
-                    <input type="color" value="#6bd1ff" class="cor-projeto">
                 </div>
 
-                <!-- Botão para salvar o projeto -->
-                <input type="button" value="Salvar projeto" class="btn__salvar-projeto">
+                <h1 class="projeto__titulo">Título do projeto</h1>
+                <p class="projeto__descricao">Essa é a descrição do meu projeto</p>
 
-            </div>
-        </form>
+                <div class="projeto__reacao">
+
+                    <div class="projeto__reacao-curtidaEcomentario">
+                        <img src="./assets/img/menu.png" alt="Icone de comentarios">
+                        <p class="num_comentario">9</p>
+                        <img src="./assets/img/menu.png" alt="Icone de curtidas">
+                        <p class="num_curtidas">9</p>
+                    </div>
+
+                    <div class="projeto__perfil">
+                        <div class="header__menu-foto">
+                            <img src="./assets/img/Photo.png" alt="Foto de perfil no menu"
+                                class="header__menu-foto-img">
+                            <p class="header__menu-foto-nome">Harry</p>
+                        </div>
+                    </div>
+                    
+                </div>
+
+
+        </section>
 
     </main>
 

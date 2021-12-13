@@ -42,7 +42,7 @@
 }
 
 @media screen and (min-width: 0px) {
-    .header__busca-text, .header__menu-foto {
+    .header__busca-text, .header__div3 {
         display: none;
     }
 }
@@ -69,10 +69,6 @@
 
 @media screen and ( min-width: 1024px) {
 
-    .header__menu {
-        display: none;
-    }
-
     .header__menu-foto {
         align-items: center;
         display: flex;
@@ -81,8 +77,25 @@
 }
 
 @media screen and (min-width: 1440px) {
-    
+    .header__menu {
+        display: none;
+    }
+
+    .header__div1, .header__div3 {
+        width: 344px;
+    }
+
+    .header__div1 {
+        padding-left: 2rem;
+    }
+
     .header__busca-text {
         width: 752px;
+    }
+
+    .header__div3 {
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 2rem;
     }
 }
