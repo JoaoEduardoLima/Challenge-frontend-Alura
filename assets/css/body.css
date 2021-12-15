@@ -5,15 +5,18 @@
 
 :root {
   --cor_bg: #051d3b;
-  --cor_bg-editor: #6bd1ff;
   --cor_bg-btn: #5081fb;
   --cor_bg-projeto: rgba(0, 0, 0, 0.16);
+  --cor_bg-foto-hover: rgba(255, 255, 255, 0.08);
   --cor_btn: rgba(80, 129, 251, 0.08);
+  --cor_btn-hover: #7ba4fc;
+  --cor_btn-salvar-hover: rgba(80, 129, 251, 0.16);
   --cor_circulo1: #ff5f56;
   --cor_circulo2: #ffbd2e;
   --cor_circulo3: #27c93f;
   --cor_editor: #141414;
-  --cor_input: #ffffff29;
+  --cor_input: rgba(255, 255, 255, 0.161);
+  --cor_input-hover: rgba(255, 255, 255, 0.24);
   --cor_placeholder: rgba(255, 255, 255, 0.64);
   --cor_shadow: rgba(0, 0, 0, 0.24);
   --cor_txt: #ffffff;

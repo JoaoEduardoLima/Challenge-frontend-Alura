@@ -54,14 +54,14 @@
                 <p class="menu__left-titulo">Seu projeto</p>
 
                 <!-- Link para navegar para a página do editor -->
-                <a href="#" class="menu__left-link ativo">
+                <a href="./index.html" id="pagina-editor" class="menu__left-link inativo">
                     <div class="menu__left-img">
                         <img src="./assets/img/code.png" alt="Página do editor de código.">
                     </div>Editor de código
                 </a>
 
                 <!-- Link para navegar para a página da comunidade. -->
-                <a href="#" class="menu__left-link inativo">
+                <a href="#" id="pagina-comunidade" class="menu__left-link ativo">
                     <div class="menu__left-img">
                         <img src="./assets/img/comunidade.png" alt="Página da comunidade.">
                     </div>Comunidade
@@ -71,9 +71,10 @@
         </nav>
 
         <section class="projeto">
+
             <div class="projeto__div">
 
-                <div class="code-editor__bg">
+                <div class="projeto__editor-bg">
 
                     <!-- Desenho de cículo no editor, simulando uma IDE -->
                     <div class="circulo1 circulo"></div>
@@ -92,26 +93,31 @@
                 <div class="projeto__reacao">
 
                     <div class="projeto__reacao-curtidaEcomentario">
-                        <img src="./assets/img/menu.png" alt="Icone de comentarios">
+                        <input type="image" src="./assets/img/icon-comentario.png" alt="Icone de comentarios"
+                            class="icon-comentario">
                         <p class="num_comentario">9</p>
-                        <img src="./assets/img/menu.png" alt="Icone de curtidas">
+                        <input type="image" src="./assets/img/icon-curtida.png" alt="Icone de curtidas"
+                            class="icon-curtida">
                         <p class="num_curtidas">9</p>
                     </div>
 
                     <div class="projeto__perfil">
-                        <div class="header__menu-foto">
-                            <img src="./assets/img/Photo.png" alt="Foto de perfil no menu"
-                                class="header__menu-foto-img">
-                            <p class="header__menu-foto-nome">Harry</p>
-                        </div>
+
+                        <img src="./assets/img/Photo.png" alt="Foto de perfil no menu" class="projeto__foto-img"
+                            class="projeto__foto">
+
+                        <p class="projeto__foto-nome">@Harry</p>
+
                     </div>
-                    
+
                 </div>
 
+            </div>
 
         </section>
 
     </main>
+
 
 </body>
 

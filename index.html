@@ -53,14 +53,14 @@
                 <p class="menu__left-titulo">Seu projeto</p>
 
                 <!-- Link para navegar para a página do editor -->
-                <a href="#" class="menu__left-link ativo">
+                <a href="#" id="pagina-editor" class="menu__left-link ativo">
                     <div class="menu__left-img">
                         <img src="./assets/img/code.png" alt="Página do editor de código.">
                     </div>Editor de código
                 </a>
 
                 <!-- Link para navegar para a página da comunidade. -->
-                <a href="#" class="menu__left-link inativo">
+                <a href="./comunidade.html" id="pagina-comunidade" class="menu__left-link inativo">
                     <div class="menu__left-img">
                         <img src="./assets/img/comunidade.png" alt="Página da comunidade.">
                     </div>Comunidade
@@ -71,7 +71,7 @@
 
         <section class="code-editor">
 
-            <div class="code-editor__bg">
+            <div class="code-editor__bg" id="background-editor">
 
                 <!-- Desenho de cículo no editor, simulando uma IDE -->
                 <div class="circulo1 circulo"></div>
@@ -84,7 +84,7 @@
 
             </div>
 
-            <input type="button" value="Visualizar com o highlight" class="code-editor__btn">
+            <input type="button" value="Visualizar com o highlight" id="botao-highlight" class="code-editor__btn">
 
         </section>
 
@@ -114,7 +114,7 @@
                     </select>
 
                     <!-- Color picker para selecionar a cor do fundo do editor -->
-                    <input type="color" value="#6bd1ff" class="cor-projeto">
+                    <input type="color" value="#6bd1ff"  class="cor-projeto" id="color-picked">
                 </div>
 
                 <!-- Botão para salvar o projeto -->
@@ -122,8 +122,9 @@
 
             </div>
         </form>
-
     </main>
+
+    <script src="./assets/js/cor-bg.js"></script>
 
 </body>
 

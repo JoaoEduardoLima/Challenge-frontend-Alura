@@ -35,6 +35,11 @@
   text-decoration: none;
 }
 
+.menu__left-link:hover {
+  opacity: 0.72;
+  transition-duration: .5s;
+}
+
 .ativo {
   opacity: 100%;
 }
