@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="./assets/css/main-menuRight.css">
     <link rel="stylesheet" href="./assets/css/main-menuLeft.css">
     <link rel="stylesheet" href="./assets/css/main-projetos.css">
+    <link rel="stylesheet" href="./assets/css/dracula.css">
+
 
 </head>
 
@@ -81,9 +83,10 @@
                     <div class="circulo2 circulo"></div>
                     <div class="circulo3 circulo"></div>
 
-                    <!-- Área para digitar o código -->
-                    <textarea name="areatxt" id="areatxt" class="code-editor_txt">const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj) const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res) const unfold = (f, seed) => { const go = (f, seed, acc) => { const res = f(seed) return res ? go(f, res[1], acc.concat([res[0]])) : acc } return go(f, seed, []) }
-                    </textarea>
+                    <!-- Área do código -->
+                    <div class="code-editor_txt" id="area-codigo">
+                        <pre><code contenteditable="false" aria-label="Editor de código" class="area__codigo">const pluckDeep = key => obj => key.split('.').reduce((accum, key) =>/n accum[key], obj) const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res) const unfold = (f, seed) => { const go = (f, seed, acc) => { const res = f(seed) return res ? go(f, res[1], acc.concat([res[0]])) : acc } return go(f, seed, []) }</code></pre>
+                    </div>
 
                 </div>
 
@@ -117,6 +120,9 @@
         </section>
 
     </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
 
 
 </body>

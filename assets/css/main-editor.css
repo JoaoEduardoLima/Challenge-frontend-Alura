@@ -48,6 +48,10 @@
   width: 100%;
 }
 
+.area__codigo {
+  white-space: pre-wrap;
+}
+
 .code-editor__btn {
   background: var(--cor_btn);
   border: none;
