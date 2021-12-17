@@ -24,6 +24,10 @@
   width: 100%;
 }
 
+.menu__right-select * {
+  background-color: var(--cor_bg);
+}
+
 .menu__right-nomeProjeto:hover, .menu__right-descricao:hover, .menu__right-select:hover {
   background: var(--cor_input-hover);
 }

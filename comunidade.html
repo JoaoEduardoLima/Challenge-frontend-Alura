@@ -16,8 +16,6 @@
     <link rel="stylesheet" href="./assets/css/main-menuLeft.css">
     <link rel="stylesheet" href="./assets/css/main-projetos.css">
     <link rel="stylesheet" href="./assets/css/dracula.css">
-
-
 </head>
 
 <body>
@@ -72,59 +70,15 @@
             </div>
         </nav>
 
-        <section class="projeto">
-
-            <div class="projeto__div">
-
-                <div class="projeto__editor-bg">
-
-                    <!-- Desenho de cículo no editor, simulando uma IDE -->
-                    <div class="circulo1 circulo"></div>
-                    <div class="circulo2 circulo"></div>
-                    <div class="circulo3 circulo"></div>
-
-                    <!-- Área do código -->
-                    <div class="code-editor_txt" id="area-codigo">
-                        <pre><code contenteditable="false" aria-label="Editor de código" class="area__codigo">const pluckDeep = key => obj => key.split('.').reduce((accum, key) =>/n accum[key], obj) const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res) const unfold = (f, seed) => { const go = (f, seed, acc) => { const res = f(seed) return res ? go(f, res[1], acc.concat([res[0]])) : acc } return go(f, seed, []) }</code></pre>
-                    </div>
-
-                </div>
-
-                <h1 class="projeto__titulo">Título do projeto</h1>
-                <p class="projeto__descricao">Essa é a descrição do meu projeto</p>
-
-                <div class="projeto__reacao">
-
-                    <div class="projeto__reacao-curtidaEcomentario">
-                        <input type="image" src="./assets/img/icon-comentario.png" alt="Icone de comentarios"
-                            class="icon-comentario">
-                        <p class="num_comentario">9</p>
-                        <input type="image" src="./assets/img/icon-curtida.png" alt="Icone de curtidas"
-                            class="icon-curtida">
-                        <p class="num_curtidas">9</p>
-                    </div>
-
-                    <div class="projeto__perfil">
-
-                        <img src="./assets/img/Photo.png" alt="Foto de perfil no menu" class="projeto__foto-img"
-                            class="projeto__foto">
-
-                        <p class="projeto__foto-nome">@Harry</p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
+        <section class="projeto" id="cards-projeto">
+            <!-- Aqui será implantado os cards de forma dinâmica com js -->
         </section>
-
     </main>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
+    <script src="./assets/js/criaCard.js"></script>
     <script>hljs.highlightAll();</script>
-
-
+    <script>criaCard();</script>
 </body>
 
 </html>

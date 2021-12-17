@@ -1,9 +1,12 @@
 const linguagem = document.querySelector("#linguagem-projeto");
 const areaDoCodigo = document.querySelector("#area-codigo");
 const botao = document.querySelector("#botao-highlight");
+
+// Inicia um contador para aplicar e remover o highlight
 var flag = 2;
 
 botao.addEventListener("click", () => {
+  // Quando o contador for par aplica, quando for ímpar remove
   if (flag % 2 == 0) {
     aplicaHighlight();
   } else {

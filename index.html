@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="./assets/css/main-menuRight.css">
     <link rel="stylesheet" href="./assets/css/main-menuLeft.css">
     <link rel="stylesheet" href="./assets/css/dracula.css">
-
 </head>
 
 <body>
@@ -81,7 +80,8 @@
 
                 <!-- Área para digitar o código -->
                 <div class="code-editor_txt" id="area-codigo">
-                    <code contenteditable="true" aria-label="Editor de código" class="area__codigo hljs">const pluckDeep = key => obj => key.split('.').reduce((accum, key) =>/n accum[key], obj) const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res) const unfold = (f, seed) => { const go = (f, seed, acc) => { const res = f(seed) return res ? go(f, res[1], acc.concat([res[0]])) : acc } return go(f, seed, []) }</code>
+                    <code contenteditable="true" aria-label="Editor de código"
+                        class="area__codigo hljs input-code"></code>
                 </div>
 
             </div>
@@ -96,17 +96,17 @@
 
                 <!-- Entrada para o nome do projeto -->
                 <input type="text" name="menu-right-nome" id="menu-right-nome" placeholder="Nome do seu projeto"
-                    class="menu__right-nomeProjeto">
+                    class="menu__right-nomeProjeto input-nome">
 
                 <!-- Entrada para a descrição do projeto -->
                 <input type="text" name="menu-right-descricao" id="menu-right-descricao"
-                    placeholder="Descrição do seu projeto" class="menu__right-descricao">
+                    placeholder="Descrição do seu projeto" class="menu__right-descricao input-descricao">
 
                 <p class="menu__right-titulo">Personalização</p>
 
                 <div class="personallizacao">
 
-                    <!-- Seletor de linguagem utilizda -->
+                    <!-- Seletor de linguagem utilizada -->
                     <select name="linguagem-projeto" id="linguagem-projeto" class="menu__right-select">
 
                         <option value="javascript">JavaScript</option>
@@ -120,15 +120,17 @@
                 </div>
 
                 <!-- Botão para salvar o projeto -->
-                <input type="button" value="Salvar projeto" class="btn__salvar-projeto">
+                <input type="button" value="Salvar projeto" class="btn__salvar-projeto" id="botao-salvar">
 
             </div>
         </form>
     </main>
 
-    <script src="./assets/js/cor-bg.js"></script>
+    <script src="./assets/js/pickedColor.js"></script>
     <script src="./assets//js/highlight.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
+    <script src="./assets/js/card.js"></script>
+    <script src="./assets/js/criaCard.js"></script>
 
 </body>
 

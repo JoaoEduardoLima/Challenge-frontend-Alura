@@ -6,7 +6,6 @@
 }
 
 .projeto__editor-bg {
-  background: var(--cor_bg-editor);
   border-radius: 8px;
   height: 402px;
   padding: 1.5rem;
